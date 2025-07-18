@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">👨‍💻 Portoku</div>
+    <nav>
+      <a href="#tentang">Tentang Saya</a>
+      <a href="#proyek">Proyek Unggulan</a>
+      <a href="#kontak">Kontak</a>
+      <a href="#pesan">Pesan</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Selamat datang, <span id="greeting-name">Kamu</span>!</h1>
+      <p>Portofolio interaktif modern yang saya rancang sendiri untuk menampilkan karya dan keahlian terbaik saya.</p>
+      <img src="images\saya.jpg" alt="Gambar Saya">
+    </section>
+
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <p>Saya <strong>Candra Andi Purnawanto</strong>, lulusan <strong>SMK Negeri Gudo</strong> jurusan <strong>Multimedia</strong>. Saat ini saya fokus mengembangkan diri sebagai <strong>web developer pemula</strong>, khususnya dalam membuat website menarik dengan <strong>HTML, CSS, dan JavaScript</strong>.</p>
+      <p>Saya menguasai <strong>editing foto/video</strong>, <strong>pengoperasian kamera</strong>, serta terbiasa membuat <strong>konten digital</strong> untuk <strong>YouTube</strong> dan media sosial lainnya. Saya juga aktif menjalankan <strong>konten affiliate marketing</strong> sebagai bagian dari pengembangan portofolio online saya.</p>
+      <p>Hobi saya adalah merakit dan memperbaiki <strong>perangkat elektronik</strong>. Saya juga pernah bekerja di lini produksi <strong>pabrik pengolahan kayu</strong>, yang melatih saya untuk bekerja cepat, teliti, dan tepat sasaran.</p>
+      
+      <div class="sosmed">
+        <a href="https://youtube.com/namachannel" target="_blank" title="YouTube">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+        </a>
+        <a href="https://instagram.com/username" target="_blank" title="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+        </a>
+        <a href="https://yourwebsite.com" target="_blank" title="Website">
+            <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Website" />
+        </a>
+    </section>
+
+    <section id="proyek">
+      <h2>Proyek Unggulan</h2>
+      <div class="card">
+        <img src="images\blogger.png" alt="Gambar Blogger">
+        <p>Proyek : Website Blogger Suka Suka.</p>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Hubungi Saya</h2>
+      <p>Silakan hubungi saya melalui email: <strong>candraandiporwanto@gmail.com</strong> atau DM di Instagram: <strong>@candraandi_p</strong></p>
+    </section>
+
+    <section id="pesan">
+      <h2>Pesan Anda</h2>
+      <form id="contact-form" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="name">Nama Anda:</label>
+          <input type="text" id="name" name="name" placeholder="Masukkan nama anda">
+          <span class="error-message" id="name-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Anda:</label>
+          <input type="email" id="email" name="email" placeholder="contoh@email.com">
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Pesan Anda:</label>
+          <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini..."></textarea>
+          <span class="error-message" id="message-error"></span>
+        </div>
+
+        <button type="submit">Kirim</button>
+      </form>
+
+      <div id="message-output" class="thank-you-message"></div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <p>&copy; 2025 Candra Andi P. All rights reserved.</p>
+    
+    <div class="sosmed">
+      <a href="https://whatsapp.com/channel/0029VaAmwSZHrDZmZsVaSd2q" target="_blank">WhatsApp</a> |
+      <a href="https://instagram.com/candraandi_p" target="_blank">Instagram</a> |
+      <a href="https://facebook.com/CandraAndiP" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/candraandi_p" target="_blank">Twitter</a> |
+      <a href="https://candraandip.blogspot.com/" target="_blank">Website</a> |
+      <a href="https://www.tiktok.com/@candraandip" target="_blank">TikTok</a> |
+      <a href="https://s.snackvideo.com/u/@candraandip/CjdsPKJA" target="_blank">Snack_Video</a> |
+      <a href="https://www.threads.net/@candraandi_p" target="_blank">Threads</a> |
+      <a href="https://id.shp.ee/ef5ojpp?smtt=0.0.9" target="_blank">Shopee_Mobile_App</a>
+    </div>
+</div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
